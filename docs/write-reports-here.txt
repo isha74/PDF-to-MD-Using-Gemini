@@ -1,1 +1,3 @@
 Write reports for every commit in this directory
+
+i have done project setup 
