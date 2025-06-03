@@ -1,3 +1,6 @@
 Write reports for every commit in this directory
 
-i have done project setup 
+DATE - 03-06-25 
+I have done project setup 
+I have created two folders Input-files_pdfs and Input-files_converted-md. And in the folder Input-files_pdfs i have added three pdfs 
+These pdf can be later converted in markdown file
