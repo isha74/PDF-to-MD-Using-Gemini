@@ -1,6 +1,12 @@
 Write reports for every commit in this directory
 
 DATE - 03-06-25 
-I have done project setup 
-I have created two folders Input-files_pdfs and Input-files_converted-md. And in the folder Input-files_pdfs i have added three pdfs 
-These pdf can be later converted in markdown file
+I have done project setup.
+I have created two folders Input-files_pdfs and Input-files_converted-md. And in the folder Input-files_pdfs i have added three pdfs. 
+These pdf can be later converted in markdown file.
+
+DATE - 04-06-25
+I have installed some extra libraries like --
+1. PyMuPDF - It is used for reading and extracting text from pdf.
+2. python-dotenv - To load the API key from .env
+And list out all the libraries installed in the environment using pip list command.
