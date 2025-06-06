@@ -1,5 +1,7 @@
 Write reports for every commit in this directory
 
+TOPIC -- Converting the pdf files into markdownfiles using Gemini
+
 DATE - 03-06-25 
 I have done project setup.
 I have created two folders Input-files_pdfs and Input-files_converted-md. And in the folder Input-files_pdfs i have added three pdfs. 
@@ -9,4 +11,18 @@ DATE - 04-06-25
 I have installed some extra libraries like --
 1. PyMuPDF - It is used for reading and extracting text from pdf.
 2. python-dotenv - To load the API key from .env
+3. PyPDF2 - Used for PDF reading
 And list out all the libraries installed in the environment using pip list command.
+
+DATE - 05-06-25
+I have created a new file (.env) in root directory for storing API key
+.env = .env is a hidden environment file used to store sensitive information like API keys 
+(e.g., Gemini API key)
+Database credentials
+Secret tokens
+
+DATE - 06-06-25
+Created 2 more files inside Secret
+1. converter.py - extract text from pdf
+2. gemini_helper.py - to securely fetch api and logic to convert text into markdown
+and understand the concept of using these files.
