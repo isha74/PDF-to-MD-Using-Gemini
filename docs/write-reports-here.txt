@@ -26,3 +26,11 @@ Created 2 more files inside Secret
 1. converter.py - extract text from pdf
 2. gemini_helper.py - to securely fetch api and logic to convert text into markdown
 and understand the concept of using these files.
+
+DATE - 08-06-25
+Created Gemini API and test it using genrativeai module.
+
+written the code in converter.py 
+I have import PyPDF2 library which is used to deal with pdf files. 
+It can perform task like read, extract text, merge, split, rotate pages, and perform other operations on PDF documents.
+It reads the pdf file from given folder and extract all the text from it. 
