@@ -30,7 +30,9 @@ and understand the concept of using these files.
 DATE - 08-06-25
 Created Gemini API and test it using genrativeai module.
 
+DATE - 09-06-25
 written the code in converter.py 
 I have import PyPDF2 library which is used to deal with pdf files. 
 It can perform task like read, extract text, merge, split, rotate pages, and perform other operations on PDF documents.
 It reads the pdf file from given folder and extract all the text from it. 
+
