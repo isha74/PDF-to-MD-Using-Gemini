@@ -1,6 +1,6 @@
 Write reports for every commit in this directory
 
-TOPIC -- Converting the pdf files into markdownfiles using Gemini
+TOPIC -- Converting the pdf files into markdown files using Gemini
 
 DATE - 03-06-25 
 I have done project setup.
@@ -36,3 +36,10 @@ I have import PyPDF2 library which is used to deal with pdf files.
 It can perform task like read, extract text, merge, split, rotate pages, and perform other operations on PDF documents.
 It reads the pdf file from given folder and extract all the text from it. 
 
+DATE - 10-06-25
+Basic PDF Extraction in main.py - Added PDF reading and text extraction logic in main.py
+Wrote basic code in main.py to ---
+1. Load a single PDF (Ikigai.pdf) using PyPDF2.
+2. Extract text from all pages.
+3. Print the full extracted content to console.
+I have done this to verify that PDF reading and text extraction using PyPDF2 is working correctly.
