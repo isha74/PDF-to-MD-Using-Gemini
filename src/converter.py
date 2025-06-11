@@ -9,7 +9,7 @@ def extract_text_from_pdf(filename):
 
     full_text = ""
     for page in reader.pages:
-        textbook = page.extract_text()
-        if textbook:
-            full_text += textbook + "\n"
+        text = page.extract_text()
+        if text:
+            full_text += text + "\n"
     return full_text

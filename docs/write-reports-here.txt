@@ -43,3 +43,11 @@ Wrote basic code in main.py to ---
 2. Extract text from all pages.
 3. Print the full extracted content to console.
 I have done this to verify that PDF reading and text extraction using PyPDF2 is working correctly.
+
+DATE - 11-06-25
+Modify the code by moving PDF extraction logic to converter.py
+
+I have created a new file converter.py
+Moved the extract_text_from_pdf(filename) function from main.py to converter.py.
+Updated main.py to import the function from converter.py.
+This is done to maintain cleaner, modular code and don't make it look messy.

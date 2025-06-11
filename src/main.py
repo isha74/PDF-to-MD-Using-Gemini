@@ -1,16 +1,11 @@
-import PyPDF2
 
-pdf_path = 'C:/Users/HP/OneDrive/Desktop/PDF-to-MD-Using-Gemini/Input-files_pdfs/Ikigai.pdf'
-read = PyPDF2.PdfReader(pdf_path)
+from converter import extract_text_from_pdf
 
-print("PDF Metadata:")
-print(read.metadata)
+# Replace this with the name of your PDF file
+filename = "Ikigai.pdf"
 
-full_text = ""
-for page in read.pages:
-    textbook = page.extract_text()
-    if textbook:
-        full_text += textbook + "\n"
+print(f"\nExtracting text from: {filename}")
+textbook = extract_text_from_pdf(filename)
 
 print("\nExtracted Text:\n")
-print(full_text)
+print(textbook)
