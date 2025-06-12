@@ -51,3 +51,11 @@ I have created a new file converter.py
 Moved the extract_text_from_pdf(filename) function from main.py to converter.py.
 Updated main.py to import the function from converter.py.
 This is done to maintain cleaner, modular code and don't make it look messy.
+
+DATE - 12-06-25
+Implemented CLI File Selection using Inquirer.
+
+written the code that let user to select a file from the command line using inquirer library which helps to create the interactive menu for selecting the file.
+Modified main.py
+This shows all the pdf files and inquirer.checkbox allow user to select the pdf file among the list
+Then the text is extracted from the selected pdf file.
