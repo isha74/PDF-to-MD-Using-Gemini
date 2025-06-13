@@ -59,3 +59,7 @@ written the code that let user to select a file from the command line using inqu
 Modified main.py
 This shows all the pdf files and inquirer.checkbox allow user to select the pdf file among the list
 Then the text is extracted from the selected pdf file.
+
+DATE - 13-06-25
+Created Gemini API key and test it in CLI(Printit in cli).
+Now i am testing it in another file test.py 
