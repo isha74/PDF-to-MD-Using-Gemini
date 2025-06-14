@@ -1,13 +1,9 @@
-
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-
-
-
-# Load the Gemini model
 model = genai.GenerativeModel("gemini-pro")
 
 def convert_text_to_markdown(text):

@@ -63,3 +63,12 @@ Then the text is extracted from the selected pdf file.
 DATE - 13-06-25
 Created Gemini API key and test it in CLI(Printit in cli).
 Now i am testing it in another file test.py 
+
+DATE - 14-06-25
+Gemini SDK integrated into project structure. 
+
+I have successfully integrated Google Gemini SDK into the project and nstalled python-dotenv to manage API keys securely.
+Loaded API key from .env file by using function --
+convert_text_to_markdown(text) this helps to convert extracted text into Markdown format
+This is done by using : model = genai.GenerativeModel("gemini-pro") 
+And then tested initial API call to ensure the integration is successful.
