@@ -72,3 +72,10 @@ Loaded API key from .env file by using function --
 convert_text_to_markdown(text) this helps to convert extracted text into Markdown format
 This is done by using : model = genai.GenerativeModel("gemini-pro") 
 And then tested initial API call to ensure the integration is successful.
+
+DATE - 15-06-25
+Today, I focused on fixing the Gemini model integration issue. 
+While testing the Gemini API, I found a 404 models/gemini-pro not found error, which indicated a problem with the model version that i have been using. 
+After diagnosing the error, I found that the latest SDK requires fully qualified model names. 
+Then I updated the model initialization from genai.GenerativeModel("gemini-pro") to genai.GenerativeModel("models/gemini-1.5-pro-latest") which successfully resolved the issue. 
+After making this correction, the Gemini model was initialized properly, and the API calls started functioning without any errors.
