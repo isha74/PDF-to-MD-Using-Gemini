@@ -1,4 +1,5 @@
-Write reports for every commit in this directory
+
+PROJECT DURATION FROM 2nd JUNE TO 2nd JULY.
 
 TOPIC -- Converting the pdf files into markdown files using Gemini
 
@@ -55,8 +56,9 @@ This is done to maintain cleaner, modular code and don't make it look messy.
 DATE - 12-06-25
 Implemented CLI File Selection using Inquirer.
 
-written the code that let user to select a file from the command line using inquirer library which helps to create the interactive menu for selecting the file.
-Modified main.py
+written the code that let user to select a file from the command line using inquirer library 
+This helps to create the interactive menu for selecting the file.
+Then modified main.py
 This shows all the pdf files and inquirer.checkbox allow user to select the pdf file among the list
 Then the text is extracted from the selected pdf file.
 
@@ -67,7 +69,7 @@ Now i am testing it in another file test.py
 DATE - 14-06-25
 Gemini SDK integrated into project structure. 
 
-I have successfully integrated Google Gemini SDK into the project and nstalled python-dotenv to manage API keys securely.
+I have successfully integrated Google Gemini SDK into the project and installed python-dotenv to manage API keys securely.
 Loaded API key from .env file by using function --
 convert_text_to_markdown(text) this helps to convert extracted text into Markdown format
 This is done by using : model = genai.GenerativeModel("gemini-pro") 
@@ -80,3 +82,11 @@ While testing the Gemini API, I found a 404 models/gemini-pro not found error, w
 After diagnosing the error I found that the latest SDK requires fully qualified model names. 
 Then I updated the model initialization from genai.GenerativeModel("gemini-pro") to genai.GenerativeModel("models/gemini-1.5-pro-latest") which successfully resolved the issue. 
 After making this correction, the Gemini model was initialized properly, and the API calls started functioning without any errors.
+
+DATE - 16-06-25
+Today I faced Quota Exceeded Error while calling Gemini API.
+Today i tested Gemini API with the real PDF data.
+During multiple consecutive API calls i received: 
+"google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota"
+Then i researched and found that Gemini free-tier limits request count per day and per minute is exceeded.
+So I have to wait for 24 hours for free limits.
