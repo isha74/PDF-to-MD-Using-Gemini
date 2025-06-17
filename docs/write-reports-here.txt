@@ -90,3 +90,10 @@ During multiple consecutive API calls i received:
 "google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota"
 Then i researched and found that Gemini free-tier limits request count per day and per minute is exceeded.
 So I have to wait for 24 hours for free limits.
+
+DATE - 17-06025
+Switched Gemini Model to Flash to handle quota limits
+Today I faced recurring quota limit errors (429 ResourceExhausted) while working with the default gemini-pro model. 
+After researching the Gemini model options I discovered that gemini-1.5-flash-latest is optimized for lighter and faster use-cases and comes with higher free-tier quotas. 
+To fix this, I modified the gemini_helper.py file and updated the model initialization line to:
+model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
