@@ -91,9 +91,18 @@ During multiple consecutive API calls i received:
 Then i researched and found that Gemini free-tier limits request count per day and per minute is exceeded.
 So I have to wait for 24 hours for free limits.
 
-DATE - 17-06025
+DATE - 17-06-25
 Switched Gemini Model to Flash to handle quota limits
 Today I faced recurring quota limit errors (429 ResourceExhausted) while working with the default gemini-pro model. 
 After researching the Gemini model options I discovered that gemini-1.5-flash-latest is optimized for lighter and faster use-cases and comes with higher free-tier quotas. 
 To fix this, I modified the gemini_helper.py file and updated the model initialization line to:
 model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
+
+DATE - 18-06-25
+Connected CLI file selection with Gemini Markdown Conversion
+
+Today, I successfully connected the CLI-based PDF file selector with the Gemini Markdown conversion feature. 
+After the user selects a PDF using the interactive Inquirer interface the extracted text from the PDF is then passed to the convert_text_to_markdown(). 
+This function uses the Gemini API to convert the raw text into well-formatted Markdown. 
+The returned Markdown output was shown directly to the terminal to check the Gemini's response. 
+gThis marks the first full pipeline integration — from PDF selection to Gemini-based Markdown generation.
