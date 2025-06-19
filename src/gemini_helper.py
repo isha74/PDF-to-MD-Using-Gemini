@@ -4,8 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-pro")
-
+model = genai.GenerativeModel("models/gemini-1.5-flash-latest") 
 
 def convert_text_to_markdown(text):
     prompt = f"""

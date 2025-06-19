@@ -105,4 +105,12 @@ Today, I successfully connected the CLI-based PDF file selector with the Gemini 
 After the user selects a PDF using the interactive Inquirer interface the extracted text from the PDF is then passed to the convert_text_to_markdown(). 
 This function uses the Gemini API to convert the raw text into well-formatted Markdown. 
 The returned Markdown output was shown directly to the terminal to check the Gemini's response. 
-gThis marks the first full pipeline integration — from PDF selection to Gemini-based Markdown generation.
+This marks the first full pipeline integration — from PDF selection to Gemini-based Markdown generation.
+
+DATE - 19-06-25
+Saving Converted Markdown into Files
+
+Today, I implemented the logic to store the Markdown content into .md files. 
+After extracting text from the selected PDFs and converting it to Markdown using Gemini, I generated filenames by replacing the .pdf extension with .md. 
+I also added functionality to automatically create a directory named Converted_MD_Files/ using os.makedirs() (if it doesn’t already exist). 
+This ensures the converted markdown files are saved in an organized manner without needing manual folder creation. 
