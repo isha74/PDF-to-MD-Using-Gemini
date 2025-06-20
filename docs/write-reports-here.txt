@@ -114,3 +114,10 @@ Today, I implemented the logic to store the Markdown content into .md files.
 After extracting text from the selected PDFs and converting it to Markdown using Gemini, I generated filenames by replacing the .pdf extension with .md. 
 I also added functionality to automatically create a directory named Converted_MD_Files/ using os.makedirs() (if it doesn’t already exist). 
 This ensures the converted markdown files are saved in an organized manner without needing manual folder creation. 
+
+DATE - 20-06-25
+Today, I fixed a problem in my code where it was trying to create the folder Converted_md everytime I ran the program, even if the folder was already there. 
+This was causing unnecessary folder creation.
+To solve this, I used a Python function
+This tells Python: "Create the folder only if it doesn’t already exist."
+After that the markdown files are saved properly in the same folder, without making duplicate folders.

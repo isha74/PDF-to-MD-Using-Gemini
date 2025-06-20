@@ -6,11 +6,12 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("models/gemini-1.5-flash-latest") 
 
-def convert_text_to_markdown(text):
+def transform_to_markdown(text):
     prompt = f"""
-You are a helpful assistant. Convert the following text into well-formatted Markdown.
+Take the following PDF content and rewrite it into well-structured Markdown format.
+Ensure all headings, lists, and paragraphs are preserved. Ignore empty lines or garbage data.
 
-Text:
+Content:
 {text}
 """
     response = model.generate_content(prompt)
