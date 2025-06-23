@@ -3,8 +3,6 @@ import inquirer
 from converter import read_pdf_document
 from gemini_helper import transform_to_markdown
 
-# INPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "Input-files_pdfs")
-# OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "Converted_md")
 BASE_DIR = os.path.dirname(__file__)
 INPUT_FILE = os.path.join(BASE_DIR, "..", "Input-files_pdfs")
 OUTPUT_DIR = os.path.join(BASE_DIR, "..", "Converted_md")

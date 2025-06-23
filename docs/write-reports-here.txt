@@ -128,3 +128,9 @@ Feature branch 2025PY1056 → Main branch main
 
 Purpose of Merge: To consolidate all the work done in the 2025PY1056 feature branch into the main project for final deployment or further development.
 The main branch now includes all features and documentation developed in 2025PY1056. 
+
+
+DATE - 23-06-25
+Code Refactoring – Function & Variable Renaming
+I changed the names of functions and variables in the code to make them easier to understand and more consistent. 
+This helps make the code cleaner and easier to read for anyone working on it.
