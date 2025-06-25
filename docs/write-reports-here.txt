@@ -144,3 +144,7 @@ main.py now only handles the flow of data and user interactions.
 converter.py is dedicated to PDF text extraction logic.
 gemini_helper.py handles Gemini model interaction and Markdown generation.
 
+DATE - 25-06-25
+Added Doc Blocks & File-Level Documentation
+Added comprehensive docstrings and documentation blocks to all core Python files (converter.py, and gemini_helper.py). 
+This ensures that the project is well-documented for future development and improves code maintainability.

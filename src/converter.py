@@ -1,3 +1,12 @@
+"""
+    Handles PDF file reading and text extraction using PyPDF2.
+
+    Functionality:
+    - Reads PDF files from the input directory.
+    - Extracts all page text content.
+    - Returns complete textual data for further processing.
+"""
+
 import os
 import PyPDF2
 
