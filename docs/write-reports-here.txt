@@ -148,3 +148,19 @@ DATE - 25-06-25
 Added Doc Blocks & File-Level Documentation
 Added comprehensive docstrings and documentation blocks to all core Python files (converter.py, and gemini_helper.py). 
 This ensures that the project is well-documented for future development and improves code maintainability.
+
+DATE - 26-06-25
+Final Testing & Review
+Successfully completed end-to-end testing of the project workflow with multiple PDF files. 
+Also verified the following functionalities:
+ 1. CLI-based PDF file selection using Inquirer
+ 2. Text extraction from PDFs using PyPDF2
+ 3. Markdown generation via Gemini API (gemini-1.5-flash-latest)
+ 4. File-saving logic into Converted_md/ folder with proper naming
+
+ No errors encountered during the run. 
+ The project is now stable and ready for deployment, demonstration, or further enhancement.
+
+✅ Status:
+     Project: Fully functional and stable
+     Ready for submission, showcasing, or scaling
