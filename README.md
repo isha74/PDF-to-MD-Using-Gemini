@@ -8,11 +8,14 @@ This repository contains basic project structure, requirements, and this README.
 
 ## How to setup?
 
-**Remember to fork this repository and work in that repository only. All commits and pushed will be done to your own forked repo, and not this.** \
-**OR** \
-**Use this template to create a new repo**
+1. Clone the Repo
+   
+```bash
+git clone https://github.com/isha74/PDF-to-MD-Using-Gemini.git
+cd PDF-to-MD-Using-Gemini
+```
 
-1. First create a virtual environment. If you don't know how to do that, below are the basic commands: \
+2. First create a virtual environment. If you don't know how to do that, below are the basic commands: \
    _Use Python 3.13 or greater_. \
    _Do not use CMD.exe on Windows. Use Powershell_
 
@@ -20,7 +23,7 @@ This repository contains basic project structure, requirements, and this README.
 python -m venv .venv
 ```
 
-2. Then activate the virtual environment using:
+3. Then activate the virtual environment using:
 
 ```bash
 .\.venv\Scripts\Activate.ps1    # For Windows Powershell.
@@ -30,26 +33,17 @@ source .venv/bin/activate       # For Linux and macOS.
 
 Read more about virtual environments here: https://docs.python.org/3/library/venv.html
 
-3. Next install the requirements from `requirements.txt` file:
+4. Next install the requirements from `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Now your project is setup and ready to be worked on.
-
-## How to approach this project?
-
-This project has the following goals:
-
-- Create a CLI UI to select .pdf files to be converted in current directory.
-- Create a new directory named `<current-directory>_converted-md`.
-- Store all converted .md files in the newly created directory
-
-Use the bundled modules:
-
-- Google Genai
-- Inquirer
+5. Set up .env file
+   
+```bash
+GEMINI_API_KEY=your_gemini_api_key
+```
 
 The stepwise process of how the application will work is:
 
@@ -58,7 +52,24 @@ The stepwise process of how the application will work is:
 3. The application will take those files and send them to gemini one by one.
 4. The response is to be stored in a file with .md extension with same name as the .pdf file.
 5. The .md files will be stored in the created directory.
+   
+## Technologies Used
+   1. Python 3.10+
+   2. PyPDF2
+   3. Inquirer
+   4. google-generativeai
+   5. dotenv
 
+## Features Implemented
+
+   1. ✅ CLI-based PDF selection (via `inquirer`)
+   2. ✅ Text extraction using `PyPDF2`
+   3. ✅ Gemini API integration for markdown formatting
+   4. ✅ Output `.md` files saved with original PDF names
+   5. ✅ Directory creation handled with `os.makedirs(..., exist_ok=True)`
+   6. ✅ Docstrings added for each file
+   7. ✅ Final testing completed and project is stable
+      
 ## Things to keep in mind:
 
 - _NO AI CODE SHALL BE USED._ Any plagarised or code given by LLMs can be detected. Anyone found using these tactics will be barred from receiving the completion certificate.
