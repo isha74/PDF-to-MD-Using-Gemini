@@ -62,13 +62,13 @@ The stepwise process of how the application will work is:
 
 ## Features Implemented
 
-   ✅ CLI-based PDF selection (via `inquirer`)
-   ✅ Text extraction using `PyPDF2`
-   ✅ Gemini API integration for markdown formatting
-   ✅ Output `.md` files saved with original PDF names
-   ✅ Directory creation handled with `os.makedirs(..., exist_ok=True)`
-   ✅ Docstrings added for each file
-   ✅ Final testing completed and project is stable
+   1. ✅ CLI-based PDF selection (via `inquirer`)
+   2. ✅ Text extraction using `PyPDF2`
+   3. ✅ Gemini API integration for markdown formatting
+   4. ✅ Output `.md` files saved with original PDF names
+   5. ✅ Directory creation handled with `os.makedirs(..., exist_ok=True)`
+   6. ✅ Docstrings added for each file
+   7. ✅ Final testing completed and project is stable
       
 ## Things to keep in mind:
 
