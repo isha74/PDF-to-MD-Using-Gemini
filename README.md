@@ -54,11 +54,11 @@ The stepwise process of how the application will work is:
 5. The .md files will be stored in the created directory.
    
 ## Technologies Used
-   Python 3.10+
-   PyPDF2
-   Inquirer
-   google-generativeai
-   dotenv
+   1. Python 3.10+
+   2. PyPDF2
+   3. Inquirer
+   4. google-generativeai
+   5. dotenv
 
 ## Features Implemented
 
@@ -69,7 +69,7 @@ The stepwise process of how the application will work is:
    ✅ Directory creation handled with `os.makedirs(..., exist_ok=True)`
    ✅ Docstrings added for each file
    ✅ Final testing completed and project is stable
-   
+      
 ## Things to keep in mind:
 
 - _NO AI CODE SHALL BE USED._ Any plagarised or code given by LLMs can be detected. Anyone found using these tactics will be barred from receiving the completion certificate.
