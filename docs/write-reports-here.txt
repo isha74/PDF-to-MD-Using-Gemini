@@ -121,3 +121,55 @@ This was causing unnecessary folder creation.
 To solve this, I used a Python function
 This tells Python: "Create the folder only if it doesn’t already exist."
 After that the markdown files are saved properly in the same folder, without making duplicate folders.
+
+DATE - 21-06-25
+Merged feature branch 2025PY1056 into main
+Feature branch 2025PY1056 → Main branch main
+
+Purpose of Merge: To consolidate all the work done in the 2025PY1056 feature branch into the main project for final deployment or further development.
+The main branch now includes all features and documentation developed in 2025PY1056. 
+
+
+DATE - 23-06-25
+Code Refactoring – Function & Variable Renaming
+I changed the names of functions and variables in the code to make them easier to understand and more consistent. 
+This helps make the code cleaner and easier to read for anyone working on it.
+
+DATE - 24-06-25
+Code Clean-up & Modularization
+Performed structural cleanup and improved modularization of the project. 
+Removed unnecessary comments and temporary test code from main.py. Separated responsibilities across files for better maintainability:
+
+main.py now only handles the flow of data and user interactions.
+converter.py is dedicated to PDF text extraction logic.
+gemini_helper.py handles Gemini model interaction and Markdown generation.
+
+DATE - 25-06-25
+Added Doc Blocks & File-Level Documentation
+Added comprehensive docstrings and documentation blocks to all core Python files (converter.py, and gemini_helper.py). 
+This ensures that the project is well-documented for future development and improves code maintainability.
+
+DATE - 26-06-25
+Final Testing & Review
+Successfully completed end-to-end testing of the project workflow with multiple PDF files. 
+Also verified the following functionalities:
+ 1. CLI-based PDF file selection using Inquirer
+ 2. Text extraction from PDFs using PyPDF2
+ 3. Markdown generation via Gemini API (gemini-1.5-flash-latest)
+ 4. File-saving logic into Converted_md/ folder with proper naming
+
+ No errors encountered during the run. 
+ The project is now stable and ready for deployment, demonstration, or further enhancement.
+
+✅ Status:
+     Project: Fully functional and stable
+     Ready for submission, showcasing, or scaling
+
+DATE - 28-05-25
+Updated README with Complete Project Details
+
+ updated the README.md file to show everything my project does. 
+ I added clear steps on how to set up and run the code, explained the features, showed the folder structure, and mentioned the tools used. 
+ Now, anyone visiting the repo can quickly understand how the project works and use it easily.
+
+ Now it is ready for deployment
