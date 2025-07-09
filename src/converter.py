@@ -4,6 +4,7 @@ import PyPDF2
 PDF_FOLDER = os.path.join(os.path.dirname(__file__), "..", "Input-files_pdfs")
 
 def extract_text_from_pdf(filename_or_path, from_full_path=False):
+    
     """
     Extracts text from a PDF file.
     
