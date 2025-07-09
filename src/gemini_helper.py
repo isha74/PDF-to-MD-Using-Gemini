@@ -1,12 +1,3 @@
-"""
-    Handles interaction with the Google Gemini API to convert text into Markdown.
-
-    Functionality:
-    - Loads API key securely using dotenv.
-    - Configures the Gemini SDK.
-    - Sends textual input and receives markdown-formatted output.
-"""
-
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv

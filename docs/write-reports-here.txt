@@ -171,3 +171,5 @@ Updated README with Complete Project Details
  updated the README.md file to show everything my project does. 
  I added clear steps on how to set up and run the code, explained the features, showed the folder structure, and mentioned the tools used. 
  Now, anyone visiting the repo can quickly understand how the project works and use it easily.
+
+ Now it is ready for deployment
