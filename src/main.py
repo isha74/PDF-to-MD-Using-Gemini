@@ -1,11 +1,10 @@
 import os
 import inquirer
-from converter import read_pdf_document
-from gemini_helper import transform_to_markdown
+from converter import extract_text_from_pdf
+from gemini_helper import convert_text_to_markdown
 
-BASE_DIR = os.path.dirname(__file__)
-INPUT_FILE = os.path.join(BASE_DIR, "..", "Input-files_pdfs")
-OUTPUT_DIR = os.path.join(BASE_DIR, "..", "Converted_md")
+INPUT_FILE = os.path.join(os.path.dirname(__file__), "..", "Input-files_pdfs")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "..", "Converted_md")
 
 os.makedirs(OUTPUT_DIR, exist_ok=True) 
 
@@ -36,8 +35,8 @@ if __name__ == "__main__":
         for file in selected_files:
             
             print(f"\nExtracting text from: {file}")
-            pdf_text = read_pdf_document(file)
-            markdown = transform_to_markdown(pdf_text)
+            textbook = extract_text_from_pdf(file)
+            markdown = convert_text_to_markdown(textbook)
             output_path = os.path.join(OUTPUT_DIR, file.replace(".pdf", ".md"))
 
             with open(output_path, "w", encoding="utf-8") as f:
